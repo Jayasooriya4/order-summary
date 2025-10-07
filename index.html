@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+  <title>Frontend Mentor | Order summary card</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    body{
+    background-color: hsl(225, 100%, 94%);
+    font-family: "Red Hat Display", sans-serif;
+    background-image: url(images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.graphic img{
+    object-fit: cover;
+    width: 100%;
+    height: 170px;
+}
+
+.white-card{
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 20px;
+    margin: auto;
+    width: 475px;
+    height: 80%;
+    overflow: hidden;
+
+    position: absolute;
+    top: 0; 
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    justify-content: center;
+    text-align: center;
+    box-shadow: 0px 15px 20px 5px hsl(227, 90%, 89%) 
+}
+
+.order-details{
+    padding: 40px 50px;
+    align-content: center;
+}
+
+.header{
+    font-weight: 900;
+    font-size: 30px;
+    color: hsl(223, 47%, 23%);
+    padding-bottom: 15px;
+}
+
+.desc{
+    font-weight: 700;
+    font-size: 17px;
+    color: hsl(224, 23%, 55%);
+    padding-bottom: 20px;
+    line-height: 1.6;
+}
+
+.plan-container{
+    border-radius: 10px;
+    background-color: hsl(225, 100%, 98%);
+    align-items:center;
+    justify-content: space-between;
+    display: flex;
+    padding: 25px;
+    margin-bottom: 35px;
+}
+
+.elements-start{
+    justify-content: start;
+    display: flex;
+    gap: 20px;
+}
+
+.elements-end{
+    justify-content: end;
+    display: flex;
+}
+
+.plan-details{
+    text-align: left;
+    flex-direction: column;
+}
+
+.plan-name{
+    font-weight: 900;
+    font-size: 16px;
+    color: hsl(223, 47%, 23%);
+    padding-bottom: 5px;
+}
+
+.pricing{
+    font-weight: 700;
+    font-size: 16px;
+    color: hsl(224, 23%, 55%);
+}
+
+.change{
+    font-weight: 700;
+    font-size: 16px;
+    color: hsl(245, 75%, 52%);
+    text-decoration: underline;
+}
+
+.change:hover{
+    color: hsla(245, 75%, 52%, 0.75);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.payment-btn{
+    background-color: hsl(245, 75%, 52%);
+    color: hsl(225, 100%, 98%); 
+    width: 100%;
+    padding: 16px;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: "Red Hat Display", sans-serif;
+    border: none;
+    box-shadow: 0px 15px 20px hsl(227, 90%, 89%);
+    margin-bottom: 30px;
+}
+
+.payment-btn:hover{
+    background-color: hsla(245, 75%, 52%, 0.75);
+    cursor: pointer;
+}
+
+.cancel-btn{
+    color:hsl(224, 23%, 55%);
+    font-weight: 800;
+    font-size: 16px;
+}
+
+.cancel-btn:hover{
+    color: hsl(223, 47%, 23%);
+    cursor: pointer;
+}
+
+    </style>
+</head>
+<body>
+  <div class="white-card">
+    <div class="graphic">
+      <img src="images/illustration-hero.svg" alt="graphic">
+    </div>
+
+    <div class="order-details">
+      <div class="header">
+        Order Summary
+      </div> 
+
+      <div class="desc">
+        You can now listen to millions of songs, audiobooks, and podcasts on any 
+        device anywhere you like!
+      </div>
+
+      <div class="plan-container">
+        <div class="elements-start">
+          <img src="images/icon-music.svg" alt="music-icon">
+          <div class="plan-details">
+            <div class="plan-name">Annual Plan</div>
+            <div class="pricing">$59.99/year</div>
+          </div>
+        </div>
+
+        <div class="elements-end">
+          <div class="change">Change</div>
+        </div>
+      </div>
+
+      <button class="payment-btn">Proceed to Payment</button>
+      <div class="cancel-btn">Cancel Order</div>
+    </div>
+  </div>
+
+
+</body>
+</html>
